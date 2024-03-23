@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Wildlife Adventure Park</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <nav>
+                <ul>
+                    <li><a href="AmuayWildlifePark.html">Home</a></li>
+                    <li><a href="BookTicket.html">Ticket</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            <!-- 汉堡菜单触发器 -->
+            <label for="toggle-sidebar" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+        </div>
+        <h1>Wildlife Adventure Park</h1>
+    </header>
+    
+    <!-- 侧边栏菜单 -->
+    <input type="checkbox" id="toggle-sidebar" class="toggle-checkbox" hidden>
+    <div id="sidebar-menu" class="sidebar">
+        <label for="toggle-sidebar" class="closebtn">&times;</label>
+        <a href="/Experience.html">Our Experience</a>
+        <a href="/animals.html">Animals</a>
+        <a href="/volunteer.html">Volunteer</a>
+        <a href="/BookTicket.html">Book Tickets</a>
+    </div>
+
+    <!-- 这里放置页面的其他内容 -->
+    <!-- 例如，文章或者图片等 -->
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Our Address:</h3>
+                <p>100 A, Carabobo,<br>Venezuela.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Visit the Park</h3>
+                <a href="/visit">Visit the Park</a>
+                <a href="/tickets">Buy Tickets</a>
+                <a href="/events">Events & Education</a>
+                <a href="/info">Hours & Info</a>
+                <a href="/map">Park Map</a>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <a href="/about">About the Park</a>
+                <a href="/careers">Join Our Team</a>
+                <a href="/tanganyika">Tanganyika Wildlife Park</a>
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

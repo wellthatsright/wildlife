@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Wildlife Adventure Park</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <nav>
+                <ul>
+                    <li><a href="AmuayWildlifePark.html">Home</a></li>
+                    <li><a href="BookTicket.html">Ticket</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            <!-- 汉堡菜单触发器 -->
+            <label for="toggle-sidebar" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+        </div>
+        <h1>Wildlife Adventure Park</h1>
+    </header>
+    
+    <!-- 侧边栏菜单 -->
+    <input type="checkbox" id="toggle-sidebar" class="toggle-checkbox" hidden>
+    <div id="sidebar-menu" class="sidebar">
+        <label for="toggle-sidebar" class="closebtn">&times;</label>
+        <a href="/Experience.html">Our Experience</a>
+        <a href="/animals.html">Animals</a>
+        <a href="/volunteer.html">Volunteer</a>
+        <a href="/BookTicket.html">Book Tickets</a>
+    </div>
+
+    <main>
+        <section class="book-ticket">
+            <div class="hero-image"> 
+                <h2>Book Your Wildlife Adventure</h2>
+                <p>Reserve your spot and come face-to-face with extraordinary animals.</p>
+            </div> 
+            <div class="ticket-form">
+                <h3>Select Your Tickets</h3>
+                <form action="#" method="post"> <div class="input-group">
+                        <label for="ticket-type">Ticket Type:</label>
+                        <select name="ticket-type" id="ticket-type">
+                          <option value="adult">Adult</option>
+                          <option value="child">Child (3-12)</option>
+                          <option value="senior">Senior (65+)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="visit-date">Visit Date:</label>
+                        <input type="date" id="visit-date" name="visit-date">
+                    </div>
+                    <button type="submit" class="book-now-button">Book Now</button> 
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        </footer>
+
+</body>
+</html>

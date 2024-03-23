@@ -1,0 +1,75 @@
+/* General styles for the body to add padding and set a background color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Container for the animal cards */
+  .animal-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Styling for each individual card */
+  .animal-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .animal-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Styling for the image in each card */
+  .animal-card img {
+    width: 100%;
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Cover the area of the container without stretching */
+    display: block;
+  }
+  
+  /* The section containing the title and description */
+  .card-content {
+    padding: 10px;
+  }
+  
+  /* Styling for the title of each card */
+  .card-title {
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for the description beneath the title */
+  .card-description {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* This will ensure that the cards have a max-width and are not too wide on larger screens */
+  @media screen and (min-width: 1200px) {
+    .animal-card {
+      width: calc(33.333% - 20px); /* Subtract the gap size */
+    }
+  }
+  
+  @media screen and (max-width: 1199px) and (min-width: 601px) {
+    .animal-card {
+      width: calc(50% - 20px); /* Subtract the gap size */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .animal-card {
+      width: 100%;
+    }
+  }
+  

@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .hero-image {
+            background-color: #9CCC65; 
+            color: white; 
+            padding: 100px 20px; 
+            text-align: center;
+        }
+
+        .booking-container {
+            display: flex; 
+            justify-content: space-around; 
+        }
+
+        .form-column,
+        .info-column {
+            flex: 1; 
+            padding: 20px; 
+        }
+
+        .form-column {
+            background-color: #f2f2f2; 
+            border-radius: 5px;
+        }
+
+        /* Other styles... */
+    </style>
     <title>Wildlife Adventure Park</title>
 </head>
 <body>
@@ -48,6 +80,52 @@
             <div class="hero-image"> 
                 <h2>Book Your Wildlife Adventure</h2>
                 <p>Reserve your spot and come face-to-face with extraordinary animals.</p>
+            </div> 
+            <div class="intro-text">
+                <p>A unique nature reserve in the heart of the city
+                    Amuay Wildlife Park is a unique nature reserve located 350 km west of the Venezuelan capital. Explore 72 km² of diverse landscapes, including grasslands, hills, and marshes, and discover a wide range of animal and plant life. For the best experience, join a scheduled tour along designated dirt tracks and witness the beauty of this protected environment.</p>
+            </div>
+
+            <div class="booking-container"> 
+                <div class="form-column"> 
+                    </div> 
+                <div class="info-column">
+                    <h3>Plan Your Visit</h3> 
+                    <p>
+                        We’re open to visitors 365 days a year, 8am to 5pm. On Christmas Day and New Year’s Day we open late at 11am.
+                        Take a walk along the 6km of beautiful wilderness trails along the  River and through the forest before relaxing at the peaceful Gardens café (8am-6pm every day and open until 10pm on Thursdays and Saturdays). There is also a gift shop selling arts and crafts made by  artisans.</p> 
+                </div>
+                <h4>Entry Fees</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entry Type</th>
+                    <th>Citizen</th>
+                    <th>Resident</th>
+                    <th>International</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day Entrance</td>
+                    <td>€15</td> 
+                    <td>€18</td> 
+                    <td>€20</td>
+                </tr>
+                <tr>
+                    <td>Monthly Membership </td>
+                    <td>€35</td> 
+                    <td>€40</td>
+                    <td>€45</td> 
+                </tr> 
+                <tr>
+                    <td>Annual Membership</td>
+                    <td>€300</td> 
+                    <td>€325</td> 
+                    <td>€350</td> 
+                </tr>
+            </tbody>
+        </table>
             </div> 
             <div class="ticket-form">
                 <h3>Select Your Tickets</h3>

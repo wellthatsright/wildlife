@@ -60,3 +60,24 @@ nav ul li {
   border: 1px solid #ccc;
   border-radius: 3px;
 } 
+.intro-text {
+  margin-bottom: 30px; /* Adjust spacing */
+  text-align: center; /* Or left, if you prefer */
+}
+.info-column table {
+  margin-top: 20px; /* Add spacing above the table */
+  width: 100%; /* Make the table fit the column */
+  border-collapse: collapse; /* Remove gaps between table cells */
+}
+
+.info-column th,
+.info-column td {
+  padding: 10px;
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ccc; /* Add table borders */
+}
+
+.info-column th {
+  background-color: #f5f5f5; /* Light gray for table headers */
+  font-weight: bold; /* Make headers bold */
+}

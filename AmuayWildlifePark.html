@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <link rel="stylesheet" href="layout.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout.css">
+
     <title>Wildlife Adventure Park</title>
 </head>
 <body>
@@ -18,12 +19,11 @@
                 </ul>
             </nav>
             <div class="search-container">
-                <form action="/search" method="get">
+                <form action="search" method="get">
                     <input type="text" placeholder="Search..." name="search">
                     <button type="submit">🔍</button>
                 </form>
             </div>
-            <!-- 汉堡菜单触发器 -->
             <label for="toggle-sidebar" class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -33,18 +33,30 @@
         <h1>Wildlife Adventure Park</h1>
     </header>
     
-    <!-- 侧边栏菜单 -->
     <input type="checkbox" id="toggle-sidebar" class="toggle-checkbox" hidden>
-    <div id="sidebar-menu" class="sidebar">
+    <nav id="sidebar-menu" class="sidebar">
         <label for="toggle-sidebar" class="closebtn">&times;</label>
-        <a href="/Experience.html">Our Experience</a>
-        <a href="/animals.html">Animals</a>
-        <a href="/volunteer.html">Volunteer</a>
-        <a href="/BookTicket.html">Book Tickets</a>
-    </div>
-
-    <!-- 这里放置页面的其他内容 -->
-    <!-- 例如，文章或者图片等 -->
+        <a href="Experience.html">Our Experience</a>
+        <a href="animals.html">Animals</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="BookTicket.html">Book Tickets</a>
+    </nav>
+    <main>
+        <div class="content-container">
+            <!-- Image Slider Container -->
+            <div class="image-slider">
+                <div class="slide" style="background-image:url('./img/lionwithppl.jpg');"></div>
+                <div class="slide" style="background-image:url('./img/eleph.jpg');"></div>
+                <div class="slide" style="background-image:url('./img/blackmonkey.jpg');"></div> 
+            </div>
+            <!-- Static Text Content -->
+            <div class="static-text-content">
+                <h1>Join Our Conservation Efforts</h1>
+                <p>Become a guardian of wildlife by volunteering at our African Safari Park. Dedicate your time to the noble cause of animal conservation and habitat preservation. Together, we can make a difference in protecting the future of our planet's most precious inhabitants.</p>
+                <button class="details-button">Volunteer Today</button>
+            </div>
+        </div>
+    </main>
 
     <footer class="site-footer">
         <div class="footer-container">
@@ -54,18 +66,18 @@
             </div>
             <div class="footer-column">
                 <h3>Visit the Park</h3>
-                <a href="/visit">Visit the Park</a>
-                <a href="/tickets">Buy Tickets</a>
-                <a href="/events">Events & Education</a>
-                <a href="/info">Hours & Info</a>
-                <a href="/map">Park Map</a>
+                <a href="visit.html">Visit the Park</a>
+                <a href="tickets.html">Buy Tickets</a>
+                <a href="events.html">Events & Education</a>
+                <a href="info.html">Hours & Info</a>
+                <a href="map.html">Park Map</a>
             </div>
             <div class="footer-column">
                 <h3>Information</h3>
-                <a href="/about">About the Park</a>
-                <a href="/careers">Join Our Team</a>
-                <a href="/tanganyika">Tanganyika Wildlife Park</a>
-                <a href="/privacy">Privacy Policy</a>
+                <a href="about.html">About the Park</a>
+                <a href="careers.html">Join Our Team</a>
+                <a href="tanganyika.html">Tanganyika Wildlife Park</a>
+                <a href="privacy.html">Privacy Policy</a>
             </div>
         </div>
         <div class="footer-bottom">

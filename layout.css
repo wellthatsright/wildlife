@@ -170,16 +170,65 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
+.content-container {
+    display: flex;
+    max-width: 1200px; /* 或者您希望的最大宽度 */
+    margin: auto; /* 水平居中 */
 }
 
-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background: white;
+.image-slider {
+    width: 100%; /* 使图片占满整个容器的宽度 */
+    position: relative;
+    overflow: hidden;
 }
 
+.slide {
+    width: 100%;
+    height: auto; /* 使高度自动调整以保持图片的宽高比 */
+    background-size: cover; /* 覆盖整个容器，但保持图片的宽高比 */
+    background-position: center; /* 居中对齐图片 */
+    animation: slide-animation 15s infinite;
+}
+
+@keyframes slide-animation {
+    /* 动画细节同前 */
+}
+
+/* 对每一个子元素添加动画延迟 */
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.static-text-content {
+    flex: 1; /* 占据剩余的空间 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 添加响应式设计以适应不同屏幕尺寸 */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-slider {
+        width: 100%;
+    }
+
+    .static-text-content {
+        order: -1; /* 确保文本内容在图片上方 */
+    }
+}
 footer {
     background-color: #333;
     color: #fff;

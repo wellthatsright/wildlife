@@ -308,5 +308,37 @@ footer.site-footer {
 .footer-info {
     flex-basis: 30%;
     padding: 20px;
-    border-radius: 5
+    border-radius;
 }
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 5px;
+        flex: 1;
+    }
+
+
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: calc(50% - 10px);
+        margin: 5px;
+    }
+}
+
+
+.responsive-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+

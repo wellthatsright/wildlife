@@ -294,22 +294,12 @@ footer {
 }
 
 /* Add specific styles for your icons if using FontAwesome or another icon library */
-.fa-facebook { /* Example for FontAwesome */
-    /* Icon styles */
-}
 
-.fa-twitter {
-    /* Icon styles */
+.social-icon { 
+    width: 30px;
+    height: 30px;
+    margin: 5px; 
 }
-
-.fa-whatsapp {
-    /* Icon styles */
-}
-
-.fa-instagram {
-    /* Icon styles */
-}
-
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .footer-container {
@@ -324,3 +314,4 @@ footer {
         margin-bottom: 20px;
     }
 }
+

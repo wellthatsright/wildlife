@@ -31,3 +31,30 @@ nav ul {
 nav li {
     display: inline-block;
 }
+.hero {
+    position: relative; /* To place hero-text over image*/
+    text-align: center;
+    padding: 30px;
+}
+
+.hero img {
+    width: 100%; 
+    height: auto;
+    max-height: 350px;
+    opacity: 0.8; /* To make the text stand out more */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white; /* Assuming a dark background image */
+}
+
+.button { /* Styling for buttons */
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}

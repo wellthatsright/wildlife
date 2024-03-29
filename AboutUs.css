@@ -1,4 +1,4 @@
-/* Basic Reset */
+﻿
 
 * {
     margin: 0;
@@ -17,11 +17,11 @@ body {
 
 .top-bar {
     display: flex;
-    justify-content: space-between; /* 保证搜索框和汉堡菜单分别对齐到左右两侧 */
+    justify-content: space-between; 
 
-    align-items: center; /* 垂直居中对齐 */
+    align-items: center; 
 
-    padding: 10px; /* 根据需要调整 */
+    padding: 10px; 
 }
 
 
@@ -36,12 +36,11 @@ body {
 
 
 .search-container input[type="text"] {
-    margin-right: 10px; /* 根据需要调整 */
+    margin-right: 10px; 
 }
 
 
 
-/* 汉堡菜单样式 */
 
 .hamburger-menu {
     display: inline-block;
@@ -61,7 +60,7 @@ body {
 
 
 
-/* 侧边栏样式 */
+
 
 .sidebar {
     height: 100%;
@@ -76,10 +75,10 @@ body {
     padding-top: 60px;
 }
 
-/* 直接根据复选框的状态控制.sidebar的显示，而不是依赖于DOM的结构 */
+
 
 .toggle-checkbox:checked ~ .sidebar {
-    width: 250px; /* 或其他展开时的宽度 */
+    width: 250px; 
 }
 
 
@@ -150,30 +149,25 @@ header {
     }
 
 
-
-
-
-    /* Style the placeholder text */
-
     .search-container input::placeholder {
         color: gray;
     }
 
 nav {
-    position: fixed; /* 固定定位 */
+    position: fixed; 
 
-    top: 0; /* 距离视口顶部为0 */
+    top: 0; 
 
-    left: 0; /* 距离视口左侧为0 */
+    left: 0; 
 
-    width: 100%; /* 导航栏宽度为100% */
+    width: 100%; 
 
-    background: #fff; /* 设置背景色，防止页面滚动时内容显示在导航栏下面 */
+    background: #fff; 
 
-    z-index: 1000; /* 确保导航栏在页面的最上层 */
-    /* 根据需要添加的样式 */
+    z-index: 1000; 
+    
 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 可选：添加阴影以提升层次感 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 
@@ -181,33 +175,33 @@ nav {
 ul {
     margin: 0;
     padding: 0;
-    list-style: none; /* 移除默认列表样式 */
+    list-style: none; 
 
-    text-align: center; /* 可选：如果您希望导航链接居中显示 */
+    text-align: center; 
 }
 
 
 
     ul li {
-        display: inline-block; /* 列表项水平排列 */
+        display: inline-block; 
 
-        margin-right: 20px; /* 每个列表项之间的距离 */
+        margin-right: 20px; 
     }
 
 
 
         ul li a {
-            text-decoration: none; /* 移除链接下划线 */
+            text-decoration: none; 
 
-            color: #333; /* 设置链接颜色 */
+            color: #333; 
 
-            padding: 20px; /* 增加链接区域的大小，使得更易点击 */
+            padding: 20px; 
         }
 
 
 
             ul li a:hover {
-                color: #000; /* 鼠标悬停时的链接颜色 */
+                color: #000; 
             }
 
 
@@ -420,7 +414,7 @@ h2 {
 
 
 
-/* Footer styles */
+
 
 footer.site-footer {
     background-color: #000; 
@@ -486,5 +480,25 @@ footer a {
 .footer-bottom {
     text-align: center; 
 
-    margin-top: 20px; 
+    margin-top: 20px; 
 }
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    margin-right: 10px; 
+}
+p, h3 {
+    text-align: justify;
+    margin-bottom: 1em; 
+}
+
+.rightCol .content p {
+    text-align: justify;
+    margin-bottom: 1em; 
+}
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amuay Wildlife Park - Park Map</title>
+    <link rel="stylesheet" href="ParkMap.css"> 
+    <link rel="stylesheet" href="layout.css">  </head>
+<body>
+    <header>
+        <div class="top-bar">
+            <nav>
+                <ul>
+                    <li><a href="AmuayWildlifePark.html">Home</a></li>
+                    <li><a href="BookTicket.html">Ticket</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            <!-- 汉堡菜单触发器 -->
+            <label for="toggle-sidebar" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+        </div>
+        <h1>Wildlife Adventure Park</h1>
+    </header>
+
+    <main>
+        <section class="park-map">
+            <h2>Amuay Wildlife Park Map</h2>
+            <div class="map-container">
+                <img src="img\map.jpg" alt="Amuay Wildlife Park Map" class="park-map-image">
+                <div class="map-legend">
+                    <h3>Legend</h3>
+                    <ul>
+                        <li><span class="trail-marker"></span> Walking Trails</li>
+                        <li><span class="viewing-area"></span>  Wildlife Viewing Areas</li>
+                        <li><span class="info-center"></span> Information Center</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Our Address:</h3>
+                <p>100 A, Carabobo,<br>Venezuela.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Visit the Park</h3>
+                <a href="visit.html">Visit the Park</a>
+                <a href="tickets.html">Buy Tickets</a>
+                <a href="events.html">Events & Education</a>
+                <a href="info.html">Hours & Info</a>
+                <a href="map.html">Park Map</a>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <a href="about.html">About the Park</a>
+                <a href="careers.html">Join Our Team</a>
+                <a href="tanganyika.html">Tanganyika Wildlife Park</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

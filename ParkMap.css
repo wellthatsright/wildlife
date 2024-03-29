@@ -1,0 +1,50 @@
+/* Inherit styles from layout.css */
+body { /* Inherited styles */}
+header, footer { /* Inherited styles */}
+
+/* Park Map Section */
+.park-map {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container {
+    position: relative; /* For positioning legend */
+}
+
+.park-map-image {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto 20px; 
+}
+
+.map-legend {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.trail-marker,
+.viewing-area,
+.info-center {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+} 
+
+.trail-marker {
+    background-color: red;
+}
+
+.viewing-area {
+    background-color: green;
+}
+
+.info-center {
+    background-color: blue;
+}

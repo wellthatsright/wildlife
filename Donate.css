@@ -343,3 +343,21 @@ footer.site-footer {
     .newsletter-form button:hover {
         background-color: #0056b3;
     }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px; 
+    }
+
+
+#donate2-image {
+    max-width: 650px;
+    height: auto;
+}
